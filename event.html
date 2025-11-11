@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="80">
+<meta name="description" content="Your Campus Portal For Secure Voting and Event Booking.">
+<meta name="keywords"content="UniVoteHub">
+<meta name="author" conent="MCOAST JUNIOR">
+<link rel="stylesheet" href="stylebook.css">
+</head>
+<body>
+<header>
+<h1>Book Events</h1>
+<nav>
+<a href="C:\Users\user\Desktop\UniVoteHub\event.html">Home</a>
+<a  href="vote.html">Vote</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>Book For Upcoming Trips/ Events</h2>
+<form id="bookingForm">
+<div class="input-box">
+<label>Full Name:</lable><br>
+<input type="text"id="name"placeholder="Enter your full name"required><br><br>
+<small id="nameFeedback" style="color: red; display: none;">Name must be at least 2 characters</small><br><br>
+</div>
+<div class="input-box">
+<label for="event">Enter Event:</label><br>
+<input type="text"id="event"placeholder="Event name"required><br>
+<small id="eventFeedback" style="color: red; display: none;">Event name must be at least 2 characters</small><br><br>
+</div>
+
+<div class="input-box">
+<label for="TNNPtickets">Number of tickets:</label><br>
+<input type="number"id="TNNPtickets"placeholder="How many?"required><br><br>
+<small id="ticketsFeedback" style="color: red; display: none;">Enter at least 1 ticket</small><br><br>
+</div>
+<div class="input-box">
+<label for="number">Phone No:</label><br>
+<input type="text"id="phonenumber"placeholder="+254"required><br><br>
+<small id="phoneFeedback" style="color: red; display: none;">Invalid Kenyan phone number</small><br><br>
+</div>
+<div class="input-box">
+<label for="date">Date & Time:</label><br>
+<input type="datetime-local" id="eventDate"required><br>
+</div>
+<button type="submit">Book Now</button>
+</form>
+</section>
+<div id="countDownDisplay" class="hidden">
+<h2 id="displayEventName"></h2>
+<p id="countdown"</p>
+</div>
+<div id="bookingResult"></div>
+</main>
+<footer>
+<p>&copy Copyrighted:  @2025 UniVoteHub</p>
+</footer>
+
+<script src="scriptevent.js"></script>
+</body>
+</html>

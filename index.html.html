@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="100">
+<meta name="description" content="Your Campus Portal For Secure Voting and Event Booking.">
+<meta name="keywords"content="UniVoteHub">
+<meta name="author" conent="MCOAST JUNIOR">
+<title>UniVoteHub</title>
+<style>
+body{
+line-height:1.6;
+margin:0;
+padding:0;
+background-image: url('image6.jpg');
+background-attachment: fixed;
+background-positon: center;
+color:#444;
+}
+header{
+background: linear-gradient(to right, #2470bf, #3a7ec5, #d3e2f2, #2470bf);
+color:white;
+padding:25px 0;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+header.h1{
+margin:0;
+font-size:2.8rem;
+animation-duration: 3s;
+animation-name: UniVoteHub;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+nav{
+background-image: linear-gradient(to right, #df92d8, #e5a7d3, white, #cc50c1,#d266b3, #df92c9, white);
+
+text-align: center;
+padding: 12px 0;
+}
+nav a{
+color:#ffffff;
+text-decoration:none;
+margin:0 20px;
+font-weight: 600;
+font-size: 1.1rem;
+letter-spacing: 0.5px;
+}
+nav a:hover{
+color: #ff6347;
+text-decoration:underlined;
+}
+section{
+padding:25px;
+margin:20px auto;
+max-width:900px;
+background: linear-gradient(to right,#2470bf, #3a7ec5, #d3e2f2, #2470bf, #df92d8, #e5a7d3, white, #cc50c1,#d266b3, #df92c9, white);
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:box-shadow 0.3s ease;
+}
+section:hover{
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+section h2{
+color:#ffffff;
+font-size:1.5rem;
+margin-bottom:15px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+table th,
+table td{
+border:1px solid #ddd;
+padding:12px;
+text-align:left;
+}
+table th{
+background-color:#f1f1f1;
+font-wieght:600;
+color:#333;
+}
+table tr:nth-child(even){
+background-color:#f9f9f9;
+}
+ul{
+list-style:none;
+padding:0;
+}
+ul li{
+margin:12px 0;
+font-size:1.2rem;
+}
+ul li strong{
+color:#007bff;
+}
+form{
+max-width:650px;
+margin:25px auto;
+background-color:#ffffff; 
+}
+form label{
+display:block;
+margic-bottom:8px;
+font-weight:600;
+}
+form input,
+form textarea,
+form button{
+width:100%;
+padding:14px
+margin-bottom:18px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:1rem;
+}
+form input:focus,
+form textarea:focus{
+border-color:#007bff;
+outline:none;
+}
+form button{
+background-color:#007bff;
+color:white;
+font-size:1.1rem;
+font-weight:600;
+border:none;
+cursor:pointer;
+transition:background-color 0.3s ease;
+}
+form button:hover{
+background-color:#0056b3;
+}
+form button:active{
+background-color:#004085;
+}
+#admin-dashboard {
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#admin-dashboard h3 {
+  margin-top: 20px;
+}
+#admin-dashboard textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+#admin-dashboard button {
+  margin-top: 10px;
+}
+#admin-login, #admin-dashboard {
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#admin-login input, #admin-dashboard input {
+  margin-bottom: 12px;
+}
+
+
+footer{
+text-align: center;
+padding: 1em;
+background: grey;
+color: black;
+position:;
+bottom: 0;
+width: 100%;
+}
+</style>
+
+</head> 
+<body>
+<header>
+<h1>Welcome to UniVoteHub</h1>
+<p>Your Campus Portal For Secure Voting and Event Booking.</p>
+</header>
+<nav>
+<a href="C:\Users\user\Desktop\UniVoteHub\index.html.html">HOME</a>|
+<a href="#schedule">Event Schedule</a>|
+<a href="#speaker">VOTE ❎ </a>|
+<a href="C:\Users\user\Desktop\UniVoteHub\event.html">BOOK EVENT</a>|
+<a href="#contact">Contact</a>
+</nav>
+<main>
+<section id="admin-login">
+  <h2>Admin Login</h2>
+  <form id="adminLoginForm">
+    <input type="text" id="adminUsername" placeholder="Admin Username" required />
+    <input type="password" id="adminPassword" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+</section>
+<section id="admin-dashboard">
+  <h2>Admin Dashboard</h2>
+  <div id="assistance-messages">
+    <h3>Student Assistance Messages</h3>
+    <ul id="messageList"></ul>
+<button id="adminLogout">Logout</button>
+  </div>
+
+  <div id="add-event">
+    <h3>Add Upcoming Event</h3>
+    <form id="eventForm">
+      <input type="text" id="eventDate" placeholder="Date (e.g., 25 Aug,2026, Monday)" required />
+      <input type="text" id="eventName" placeholder="School Event" required />
+      <input type="text" id="eventTrip" placeholder="School Trip (optional)" />
+      <button type="submit">Add Event</button>
+    </form>
+  </div>
+</section>
+
+<section id="about">
+<h2>About UniVoteHub</h2>
+<p>To make secure E-voting and booking of school events by all students</p>
+</section>
+<section id="schedule">
+<h2>Upcoming Events</h2>
+<table>
+<thead>
+<tr>
+<th>DATE & TIME</th>
+<th>SCHOOL EVENTS</th>
+<th>SCHOOL TRIPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5 Jan,2026, Monday</td>
+<td>Student Admission and Orientation</td>
+<td>Environmental Club Trip</td>
+</tr>
+<tr>
+<td>20 Jan,2026, Monday</td>
+<td>Administrative Event(School Holiday ,Graduation & Tree planting)</td>
+<td>Christian Union Trip</td>
+</tr>
+<tr>
+<td>10 March,2026, Wednesday </td>
+<td>Extracurricular Events(Games activities)</td>
+<td></td>
+</tr>
+<td>15 Jun,2026, Friday</td>
+<td>Special Events(Cultural Day and Talent shows)</td>
+<td>Stuent Council Trip</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="speaker">
+<h2><a href="vote.html">Click Here</a></h2>
+<ul>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact Us for Assistance</h2>
+<form>
+
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"></br></br>
+<label for="email">Email:</label></br>
+<input type="email" id="email" name="email"></br></br>
+<label for="message">Message:</label></br>
+<textarea id="message" name="message" row="5"></textarea></br></br>
+<button type="submit">Send</button>
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy Copyrighted: @2025 UniVoteHub</p>
+</footer>
+
+<script src="scripteventpage.js"></script>
+</body>
+</html>

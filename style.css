@@ -1,0 +1,130 @@
+body{
+font-family: arial, sans-serif;
+margin: 0;
+padding: 0;
+background-image: url('student council.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-positon: center;
+}
+header{
+background: linear-gradient(to right, #2470bf, #3a7ec5, #d3e2f2, #2470bf);
+color: white;
+padding: 1em;
+text-align: center;
+}
+nav{
+background-image: linear-gradient(to right, #df92d8, #e5a7d3, white, #cc50c1,#d266b3, #df92c9, white);
+
+text-align: center;
+padding: 12px 0;
+}
+nav a{
+color:#ffffff;
+text-decoration:none;
+margin:0 20px;
+font-weight: 600;
+font-size: 1.1rem;
+letter-spacing: 0.5px;
+}
+nav a:hover{
+color: #ff6347;
+text-decoration:underlined;
+}
+
+main{
+padding: 2em;
+color:white;
+text-align: center;
+}
+section{
+padding:25px;
+margin:20px auto;
+max-width:600px;
+background: linear-gradient(to right,#2470bf, #3a7ec5, #d3e2f2, #2470bf, #df92d8, #e5a7d3, white, #cc50c1,#d266b3, #df92c9, white);
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:box-shadow 0.3s ease;
+}
+section:hover{
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+form{
+margin-top: 1em;
+}
+button{
+padding: 0.5em 1em;
+background: #3498db;
+color: white;
+border: none;
+cursor: pointer;
+}
+#bookingResult {
+  background-color: skyblue;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+}
+
+#bookingResult h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#bookingResult p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+footer{
+text-align: center;
+padding: 1em;
+background: white;
+ 
+color: black;
+position: ;
+bottom: 0;
+width: 100%;
+}
+
+#voteResult {
+  background-color: grey;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px auto;
+  font-family: Arial, sans-serif;
+width: 50%;
+margin:20px auto;
+max-width:600px;
+}
+
+#voteResult h3, #voteResult h4 {
+  color: blue;
+}
+
+#voteResult ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#voteResult li {
+  padding: 4px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#resetVotes {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resetVotes:hover {
+  background-color: #b71c1c;
+}
+
